@@ -2,8 +2,6 @@
 
 [![Open Notebook](https://img.shields.io/badge/Open_Notebook!-grey?logo=jupyter)](https://maulanakavaldo.github.io/mlops-water-pipeline/notebook.html)
 
-[Notebook](https://maulanakavaldo.github.io/mlops-water-pipeline/notebook.html)
-
 ___
 
 
