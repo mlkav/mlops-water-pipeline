@@ -1,5 +1,7 @@
 *Created: 30/08/2024*
 
+[Notebook](https://maulanakavaldo.github.io/mlops-water-pipeline/notebook.html)
+
 ___
 
 
