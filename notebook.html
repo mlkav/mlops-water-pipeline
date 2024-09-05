@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Water Potability | ML Operations</title>
+  <title>Water Potability | ML Operations | Dicoding Indonesia</title>
   <link href="https://github.com/user-attachments/assets/d9553d40-0186-486a-9dfa-d56fde27efb1" rel="icon">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
   <style type="text/css">
@@ -7704,145 +7704,6 @@ all of MD as it is not optimized for dense, information rich UIs.
           <div class="jp-InputPrompt jp-InputArea-prompt">
           </div>
           <div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-            <h1 id="Submission-1:-Water-Potability-(ML-Operation)">Submission 1: Water Potability (ML Operation)<a
-                class="anchor-link" href="#Submission-1:-Water-Potability-(ML-Operation)">¶</a></h1>
-            <p><img alt="water" src="https://github.com/user-attachments/assets/f4c052f6-b522-4939-bb09-a388888abad2" />
-            </p>
-            <table>
-              <thead>
-                <tr>
-                  <th></th>
-                  <th>Deskripsi</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Dataset</td>
-                  <td><a href="https://www.kaggle.com/datasets/adityakadiwal/water-potability">Water Potability</a></td>
-                </tr>
-                <tr>
-                  <td>Masalah</td>
-                  <td>Potabilitas air adalah kunci untuk menjaga kesehatan manusia, karena air yang tidak aman dapat
-                    menimbulkan berbagai risiko kesehatan. World Health Organization (WHO) menekankan pentingnya
-                    kualitas air minum untuk mencegah penyakit [^1]. Proyek ini bertujuan mengklasifikasikan air sebagai
-                    "potable" (aman) atau "not potable" (tidak aman), menggunakan data fitur seperti pH dan kekerasan
-                    air. Centers for Disease Control and Prevention (CDC) menyatakan bahwa memastikan kualitas air minum
-                    adalah langkah penting untuk perlindungan kesehatan [^2]. Hal ini juga didukung oleh laporan United
-                    Nations tentang pentingnya akses ke air bersih [^3] dan pedoman dari Environmental Protection Agency
-                    (EPA) mengenai standar kualitas air [^4].</td>
-                </tr>
-                <tr>
-                  <td>Solusi machine learning</td>
-                  <td>Untuk menentukan potabilitas air, berbagai parameter kualitas air biasanya diuji. Namun, penilaian
-                    keamanan air hanya berdasarkan hasil pengujian tersebut bisa memakan waktu dan tidak selalu langsung
-                    memberikan kesimpulan. Dengan menggunakan model Sequential dalam deep learning, yang merupakan
-                    struktur jaringan saraf sederhana namun efektif, diharapkan dapat memberikan penilaian yang lebih
-                    cepat dan akurat mengenai keamanan air. Model Sequential terdiri dari lapisan-lapisan yang terhubung
-                    secara linier dan dapat memproses data input untuk menghasilkan prediksi apakah air aman untuk
-                    dikonsumsi atau tidak. Hasil dari sistem ini dapat digunakan sebagai dasar untuk pertimbangan dan
-                    tindakan lebih lanjut dalam memastikan keamanan sumber air.</td>
-                </tr>
-                <tr>
-                  <td>Metode pengolahan</td>
-                  <td>Terdapat sepuluh fitur di mana sembilan di antaranya digunakan untuk klasifikasi dan satu sebagai
-                    label klasifikasi. Semua fitur dalam dataset bersifat numerikal: ph, Hardness, Solids, Chloramines,
-                    Sulfate, Conductivity, Organic_carbon, Trihalomethanes, dan Turbidity memiliki tipe data float64,
-                    sedangkan fitur label Potability memiliki tipe data int64. Data dibagi menjadi 80% untuk pelatihan
-                    dan 20% untuk evaluasi. Proses transformasi data melibatkan normalisasi untuk fitur numerikal
-                    menggunakan z-score. Normalisasi dengan z-score dilakukan untuk memastikan bahwa semua fitur
-                    memiliki skala yang seragam, dengan rata-rata 0 dan deviasi standar 1, sehingga membantu model dalam
-                    proses pelatihan dengan mengurangi bias yang disebabkan oleh perbedaan skala fitur.</td>
-                </tr>
-                <tr>
-                  <td>Arsitektur model</td>
-                  <td>Arsitektur model dimulai dengan menggabungkan input fitur dan kemudian melalui beberapa layer
-                    dense. Model terdiri dari empat layer dense dengan unit 256, 128, 64, dan 32, masing-masing
-                    menggunakan aktivasi ReLU, diikuti oleh Batch Normalization dan Dropout dengan rate 0.3. Layer
-                    output adalah dense dengan 1 unit dan aktivasi sigmoid untuk klasifikasi biner. Model ini
-                    dikompilasi dengan optimizer Adam (learning rate 0.0001), loss binary crossentropy, dan metrik
-                    akurasi, untuk mengklasifikasikan air sebagai "potable" (aman) atau "not potable" (tidak aman).</td>
-                </tr>
-                <tr>
-                  <td>Metrik evaluasi</td>
-                  <td>Metrik evaluasi yang digunakan dalam proyek ini meliputi AUC, Precision, Recall, ExampleCount, dan
-                    BinaryAccuracy. ExampleCount menghitung jumlah contoh yang dievaluasi, sedangkan BinaryCrossentropy
-                    mengukur kerugian model dalam klasifikasi biner. BinaryAccuracy menilai akurasi klasifikasi,
-                    sedangkan Precision dan Recall mengukur ketepatan dan kemampuan model dalam mendeteksi kasus positif
-                    dengan ambang batas 0.5. Dengan konfigurasi ini, model dievaluasi secara menyeluruh untuk memastikan
-                    efektivitasnya dalam menentukan apakah air aman untuk dikonsumsi atau tidak.</td>
-                </tr>
-                <tr>
-                  <td>Performa model</td>
-                  <td>Hasil evaluasi model setelah tuning menunjukkan akurasi 72.8% pada pelatihan dan 63.7% pada data
-                    validasi. Loss yang diperoleh adalah 0.53 selama pelatihan dan 0.63 pada validasi. Model menunjukkan
-                    kinerja yang cukup baik, namun masih terdapat gap yang cukup jauh antara pelatihan dan validasi
-                    sehingga masih perlu eksperiment lebih lanjut.</td>
-                </tr>
-              </tbody>
-            </table>
-            <h2 id="Deployment-TensorFlow-Serving">Deployment TensorFlow Serving<a class="anchor-link"
-                href="#Deployment-TensorFlow-Serving">¶</a></h2>
-            <p>Untuk melakukan deployment model yang telah dibuat yaitu dengan menggunakan Docker untuk mengemas dan
-              menjalankan model dalam kontainer yang terisolasi. Pastikan bahwa Docker Desktop telah terinstal di
-              komputer. Unduh <a href="https://www.docker.com/products/docker-desktop/">Docker Desktop</a> dan lihat
-              cara <a href="https://docs.docker.com/desktop/install/windows-install/">instalasi</a>.</p>
-            <h3 id="Membuat-docker-file-yang-berisi-command">Membuat docker file yang berisi command<a
-                class="anchor-link" href="#Membuat-docker-file-yang-berisi-command">¶</a></h3>
-            <pre><code>```docker
-FROM tensorflow/serving:latest
-
-COPY ./serving_model_dir /models
-ENV MODEL_NAME=water-prediction-model
-```</code></pre>
-            <h3 id="Membuat-Docker-Image">Membuat Docker Image<a class="anchor-link" href="#Membuat-Docker-Image">¶</a>
-            </h3>
-            <pre><code>```docker
-docker build -t water-prediction-tf-serving .
-```</code></pre>
-            <h3 id="Menjalankan-Docker">Menjalankan Docker<a class="anchor-link" href="#Menjalankan-Docker">¶</a></h3>
-            <pre><code>```docker
-docker run -p 8080:8501 water-prediction-tf-serving
-```</code></pre>
-            <h3 id="Metadata">Metadata<a class="anchor-link" href="#Metadata">¶</a></h3>
-            <p>Copy paste url berikut ke browser untuk melihat metadata:
-              <code>url     http://localhost:8080/v1/models/water-prediction-model/metadata     </code>
-              Jika berhasil akan muncul seperti ini:
-            </p>
-            <img alt="mkavaldo-metadata"
-              src="https://github.com/user-attachments/assets/35a3cd22-b4bd-4bf8-a1ad-3d3348c8c2e3" width="445" />
-            <h3 id="Prediction">Prediction<a class="anchor-link" href="#Prediction">¶</a></h3>
-            <p>Melakukan prediksi pada data sample dengan menentukan index tertentu.</p>
-            <ul>
-              <li>Buka file testing.ipynb dan lakukan run cell apakah model tersedia pada endpoint.
-                <pre><code class="language-url">url
-http://localhost:8080/v1/models/water-prediction-model
-</code></pre>
-              </li>
-              <li>Lakukan run hingga cell akhir.</li>
-              <li>Ubah index data sesuai kebutuhan untuk melihat hasil prediksi.</li>
-            </ul>
-            <p>Referensi:</p>
-            <p>[^1]: WHO. "Guidelines for Drinking-water Quality". 2022. Diakses pada 02 Agustus 2024 melalui <a
-                href="https://www.who.int/publications/i/item/9789240045064">tautan.</a></p>
-            <p>[^2]: CDC. "Drinking Water Quality". 2024. Diakses pada 02 Agustus 2024 melalui <a
-                href="https://wwwnc.cdc.gov/travel/yellowbook/2024/preparing/water-disinfection">tautan.</a></p>
-            <p>[^3]: UN. "Water and Sanitation". 2024. Diakses pada 02 Agustus 2024 melalui <a
-                href="https://www.un.org/en/climatechange/science/climate-issues/water?gad_source=1&amp;gclid=CjwKCAjwodC2BhAHEiwAE67hJCOFgcfzxzhV9OGcpfbqKp-0kFjooiQwXpDkWe2Q6CDQ1Wm9IvrcbBoCQTcQAvD_BwE">tautan.</a>
-            </p>
-            <p>[^4] EPA. "Water Quality Standards". 2024. Diakses pada 02 Agustus 2024 melalui <a
-                href="https://www.epa.gov/wqs-tech">tautan</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-      <div class="jp-Cell-inputWrapper" tabindex="0">
-        <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-        </div>
-        <div class="jp-InputArea jp-Cell-inputArea">
-          <div class="jp-InputPrompt jp-InputArea-prompt">
-          </div>
-          <div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
             <h1 id="Install-Library">Install Library<a class="anchor-link" href="#Install-Library">¶</a></h1>
           </div>
         </div>
@@ -8585,9 +8446,9 @@ Keras           2.15.0
           <div class="jp-OutputArea-child">
             <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
             <div class="jp-RenderedJavaScript jp-OutputArea-output" data-mime-type="application/javascript"
-              id="9d218193-009d-4512-8f30-d7339f80382c" tabindex="0">
+              id="16f1e7cc-89af-4d43-bfc2-351952ab1a05" tabindex="0">
               <script type="text/javascript">
-                var element = document.getElementById('9d218193-009d-4512-8f30-d7339f80382c');
+                var element = document.getElementById('16f1e7cc-89af-4d43-bfc2-351952ab1a05');
 
                 if (typeof window.interactive_beam_jquery == 'undefined') {
                   var jqueryScript = document.createElement('script');
