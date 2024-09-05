@@ -1,6 +1,6 @@
 *Created: 30/08/2024*
 
-[![Open Notebook](https://img.shields.io/badge/Open_Notebook!-grey?logo=jupyter)](https://maulanakavaldo.github.io/mlops-water-pipeline/notebook.html)
+[![Open Notebook](https://img.shields.io/badge/Open_Notebook!-blue?logo=jupyter)](https://maulanakavaldo.github.io/mlops-water-pipeline/notebook.html)
 
 ___
 
