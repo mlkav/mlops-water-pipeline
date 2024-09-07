@@ -74,7 +74,7 @@ Melakukan prediksi pada data sample dengan menentukan index tertentu.
 
 
 
-Referensi:
+### Reference:
 
 [^1]: WHO. "Guidelines for Drinking-water Quality". 2022. Diakses pada 02 Agustus 2024 melalui [tautan.](https://www.who.int/publications/i/item/9789240045064)
 
