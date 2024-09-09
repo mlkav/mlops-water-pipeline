@@ -1,17 +1,17 @@
-*Created: 30/08/2024*
-
+![created](https://img.shields.io/badge/created-30/08/2024-blue)
 [![Open Notebook](https://img.shields.io/badge/Open_Notebook!-blue?logo=jupyter)](https://maulanakavaldo.github.io/mlops-water-pipeline/notebook.html)
-
+<a href="https://www.linkedin.com/in/maulana-kavaldo/" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-blue?logo=linkedin" alt="LinkedIn">
+</a>
+<a href="https://www.dicoding.com/users/mkavaldo/academies" target="_blank">
+  <img src="https://img.shields.io/badge/Dicoding_Profile-blue?logo=browser" alt="Dicoding Profile">
+</a>
 ___
 
 
 # Submission 1: Water Potability
 
 ![water](https://github.com/user-attachments/assets/f4c052f6-b522-4939-bb09-a388888abad2)
-
-Nama : Maulana Kavaldo
-
-UsernameDicoding : mkavaldo
 
 |         | Deskripsi|
 |---------|----------|
@@ -60,7 +60,6 @@ Jika berhasil akan muncul seperti ini:
 <img width="445" alt="mkavaldo-metadata" src="https://github.com/user-attachments/assets/35a3cd22-b4bd-4bf8-a1ad-3d3348c8c2e3">
 
 
-
 ### Prediction
 
 Melakukan prediksi pada data sample dengan menentukan index tertentu.
@@ -71,7 +70,6 @@ Melakukan prediksi pada data sample dengan menentukan index tertentu.
     ```
 - Lakukan run hingga cell akhir.
 - Ubah index data sesuai kebutuhan untuk melihat hasil prediksi.
-
 
 
 ### Reference:
