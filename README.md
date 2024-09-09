@@ -10,7 +10,7 @@
 ___
 
 
-# Submission 1: Water Potability
+# Water Potability (MLOPS)
 
 ![water](https://github.com/user-attachments/assets/f4c052f6-b522-4939-bb09-a388888abad2)
 
