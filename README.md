@@ -1,5 +1,5 @@
 ![created](https://img.shields.io/badge/created-30/08/2024-blue)
-[![Open Notebook](https://img.shields.io/badge/Open_Notebook!-blue?logo=jupyter)](https://maulanakavaldo.github.io/mlops-water-pipeline/notebook.html)
+[![Open Notebook](https://img.shields.io/badge/Open_Notebook!-blue?logo=jupyter)](https://mlkav.github.io/mlops-water-pipeline/notebook.html)
 <a href="https://www.linkedin.com/in/maulana-kavaldo/" target="_blank">
   <img src="https://img.shields.io/badge/LinkedIn-blue?logo=linkedin" alt="LinkedIn">
 </a>
